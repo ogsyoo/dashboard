@@ -24,7 +24,7 @@ import (
 	"github.com/golang/glog"
 	"golang.org/x/text/language"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
 )
 
 const defaultLocaleDir = "en"

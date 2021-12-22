@@ -17,9 +17,9 @@ package logs
 import (
 	"context"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/controller"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/controller"
 	meta "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )

@@ -17,7 +17,7 @@ package args
 import (
 	"net"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/cert/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/cert/api"
 )
 
 var Holder = &holder{}

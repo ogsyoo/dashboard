@@ -15,7 +15,7 @@
 package systembanner
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/systembanner/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/systembanner/api"
 )
 
 // SystemBannerManager is a structure containing all system banner manager members.

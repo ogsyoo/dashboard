@@ -19,11 +19,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/handler/parser"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/handler/parser"
 
 	"github.com/emicklei/go-restful/v3"
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 const (

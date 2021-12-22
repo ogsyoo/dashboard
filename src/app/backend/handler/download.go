@@ -19,7 +19,7 @@ import (
 
 	restful "github.com/emicklei/go-restful/v3"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 func handleDownload(response *restful.Response, result io.ReadCloser) {

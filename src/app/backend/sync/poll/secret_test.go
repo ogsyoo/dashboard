@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/sync/poll"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/sync/poll"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/watch"

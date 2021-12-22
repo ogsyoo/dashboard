@@ -18,9 +18,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 	batch "k8s.io/api/batch/v1"
 	v1 "k8s.io/api/core/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"

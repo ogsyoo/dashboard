@@ -17,8 +17,8 @@ package job
 import (
 	"context"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
 	batch "k8s.io/api/batch/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	k8sClient "k8s.io/client-go/kubernetes"

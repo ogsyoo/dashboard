@@ -18,7 +18,7 @@ import (
 	"crypto/elliptic"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/cert/ecdsa"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/cert/ecdsa"
 )
 
 func TestNewECDSACreator(t *testing.T) {

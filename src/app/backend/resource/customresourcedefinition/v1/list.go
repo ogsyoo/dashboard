@@ -19,11 +19,11 @@ import (
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	apiextensionsclientset "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/customresourcedefinition/types"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/customresourcedefinition/types"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 )
 
 // GetCustomResourceDefinitionList returns all the custom resource definitions in the cluster.

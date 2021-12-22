@@ -35,7 +35,7 @@ import (
 	client "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 const (

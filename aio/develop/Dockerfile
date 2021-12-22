@@ -102,13 +102,13 @@ ENV NODE_OPTIONS=--max-old-space-size=8192
 RUN chmod 777 -R /go
 
 # Volume for source code
-VOLUME ["/go/src/github.com/ogsyoo/dashboard"]
+VOLUME ["/go/src/github.com/ogsyoo/dashboard/v2"]
 
 # Mount point for kubeconfig
 RUN mkdir -p /home/user/.kube
 
 # Current directory is always dashboard source directory.
-WORKDIR /go/src/github.com/ogsyoo/dashboard
+WORKDIR /go/src/github.com/ogsyoo/dashboard/v2
 
 # Expose port for frontend, backend and remote debuging
 EXPOSE 8080 8443 9090 2345

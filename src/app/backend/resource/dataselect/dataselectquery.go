@@ -15,7 +15,7 @@
 package dataselect
 
 import (
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
 )
 
 // DataSelectQuery is options for GenericDataSelect which takes []GenericDataCell and returns selected data.

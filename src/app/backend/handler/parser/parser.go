@@ -19,8 +19,8 @@ import (
 	"strings"
 
 	"github.com/emicklei/go-restful/v3"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 )
 
 func parsePaginationPathParameter(request *restful.Request) *dataselect.PaginationQuery {

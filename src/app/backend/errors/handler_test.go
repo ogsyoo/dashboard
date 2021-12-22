@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 func TestHandleHTTPError(t *testing.T) {

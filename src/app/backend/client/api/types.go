@@ -24,8 +24,8 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/clientcmd/api"
 
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	pluginclientset "github.com/ogsyoo/dashboard/src/app/backend/plugin/client/clientset/versioned"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	pluginclientset "github.com/ogsyoo/dashboard/v2/src/app/backend/plugin/client/clientset/versioned"
 )
 
 const (

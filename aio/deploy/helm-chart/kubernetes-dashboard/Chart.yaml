@@ -20,9 +20,9 @@ description: General-purpose web UI for Kubernetes clusters
 keywords:
   - kubernetes
   - dashboard
-home: https://github.com/ogsyoo/dashboard
+home: https://github.com/ogsyoo/dashboard/v2
 sources:
-  - https://github.com/ogsyoo/dashboard
+  - https://github.com/ogsyoo/dashboard/v2
 maintainers:
   - name: desaintmartin
     email: cdesaintmartin@wiremind.fr

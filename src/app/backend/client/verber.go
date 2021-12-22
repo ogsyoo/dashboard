@@ -24,10 +24,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	restclient "k8s.io/client-go/rest"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/customresourcedefinition"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/customresourcedefinition"
 )
 
 // resourceVerber is a struct responsible for doing common verb operations on resources, like

@@ -27,10 +27,10 @@ import (
 	"golang.org/x/net/xsrftoken"
 	utilnet "k8s.io/apimachinery/pkg/util/net"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 const (

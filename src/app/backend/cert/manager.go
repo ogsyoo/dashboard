@@ -19,7 +19,7 @@ import (
 	"log"
 	"os"
 
-	certapi "github.com/ogsyoo/dashboard/src/app/backend/cert/api"
+	certapi "github.com/ogsyoo/dashboard/v2/src/app/backend/cert/api"
 )
 
 // Manager is used to implement cert/api/types.Manager interface. See Manager for more information.

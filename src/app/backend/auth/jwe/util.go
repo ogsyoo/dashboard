@@ -19,7 +19,7 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 // Credits to David W. https://stackoverflow.com/a/44688503

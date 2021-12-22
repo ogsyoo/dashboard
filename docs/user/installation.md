@@ -72,4 +72,4 @@ pod "kubernetes-dashboard-7d8b9cc8d-npljm" deleted
 ```
 
 ----
-_Copyright 2019 [The Kubernetes Dashboard Authors](https://github.com/ogsyoo/dashboard/graphs/contributors)_
+_Copyright 2019 [The Kubernetes Dashboard Authors](https://github.com/ogsyoo/dashboard/v2/graphs/contributors)_

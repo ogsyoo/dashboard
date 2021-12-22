@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
 	api "k8s.io/api/core/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

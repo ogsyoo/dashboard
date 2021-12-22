@@ -17,10 +17,10 @@ package rolebinding
 import (
 	"log"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 	rbac "k8s.io/api/rbac/v1"
 	"k8s.io/client-go/kubernetes"
 )

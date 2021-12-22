@@ -19,11 +19,11 @@ import (
 	"log"
 	"time"
 
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	integrationapi "github.com/ogsyoo/dashboard/src/app/backend/integration/api"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/metric/heapster"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/metric/sidecar"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	integrationapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/heapster"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/sidecar"
 	"k8s.io/apimachinery/pkg/util/wait"
 )
 

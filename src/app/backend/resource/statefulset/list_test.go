@@ -23,12 +23,12 @@ import (
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 func getReplicasPointer(replicas int32) *int32 {

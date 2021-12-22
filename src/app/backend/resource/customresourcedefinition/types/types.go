@@ -21,8 +21,8 @@ import (
 
 	"k8s.io/apiextensions-apiserver/pkg/apis/apiextensions"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
 )
 
 // CustomResourceDefinitionList contains a list of Custom Resource Definitions in the cluster.

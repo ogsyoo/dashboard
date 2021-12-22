@@ -15,7 +15,7 @@
 package secret
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 	api "k8s.io/api/core/v1"
 )
 

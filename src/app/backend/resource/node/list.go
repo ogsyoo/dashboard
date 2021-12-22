@@ -21,10 +21,10 @@ import (
 	v1 "k8s.io/api/core/v1"
 	client "k8s.io/client-go/kubernetes"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 )
 
 // NodeList contains a list of nodes in the cluster.

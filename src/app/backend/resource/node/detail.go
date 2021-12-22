@@ -24,13 +24,13 @@ import (
 	"k8s.io/apimachinery/pkg/fields"
 	k8sClient "k8s.io/client-go/kubernetes"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/event"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/pod"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/event"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/pod"
 )
 
 // NodeAllocatedResources describes node allocated resources.

@@ -24,14 +24,14 @@ import (
 	"strings"
 
 	restful "github.com/emicklei/go-restful/v3"
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
-	"github.com/ogsyoo/dashboard/src/app/backend/auth"
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/auth/jwe"
-	"github.com/ogsyoo/dashboard/src/app/backend/client"
-	"github.com/ogsyoo/dashboard/src/app/backend/settings"
-	"github.com/ogsyoo/dashboard/src/app/backend/sync"
-	"github.com/ogsyoo/dashboard/src/app/backend/systembanner"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/auth"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/auth/jwe"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/client"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/settings"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/sync"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/systembanner"
 	"k8s.io/client-go/kubernetes/fake"
 )
 

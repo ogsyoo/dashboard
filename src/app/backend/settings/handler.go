@@ -19,10 +19,10 @@ import (
 
 	restful "github.com/emicklei/go-restful/v3"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/settings/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/settings/api"
 )
 
 // SettingsHandler manages all endpoints related to settings management.

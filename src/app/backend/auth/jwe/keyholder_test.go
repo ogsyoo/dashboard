@@ -17,7 +17,7 @@ package jwe
 import (
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/sync"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/sync"
 	"k8s.io/client-go/kubernetes/fake"
 )
 

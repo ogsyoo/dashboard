@@ -21,8 +21,8 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
-	"github.com/ogsyoo/dashboard/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
 )
 
 // Implements CsrfTokenManager interface.

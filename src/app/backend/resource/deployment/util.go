@@ -18,7 +18,7 @@ import (
 	apps "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
 )
 
 // Methods below are taken from kubernetes repo:

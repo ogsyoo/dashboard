@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
 	v1 "k8s.io/api/core/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

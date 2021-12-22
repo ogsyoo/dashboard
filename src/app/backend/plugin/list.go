@@ -18,11 +18,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/plugin/apis/v1alpha1"
-	pluginclientset "github.com/ogsyoo/dashboard/src/app/backend/plugin/client/clientset/versioned"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/plugin/apis/v1alpha1"
+	pluginclientset "github.com/ogsyoo/dashboard/v2/src/app/backend/plugin/client/clientset/versioned"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

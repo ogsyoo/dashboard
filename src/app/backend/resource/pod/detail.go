@@ -30,13 +30,13 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	errorHandler "github.com/ogsyoo/dashboard/src/app/backend/errors"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/controller"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/persistentvolumeclaim"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	errorHandler "github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/controller"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/persistentvolumeclaim"
 )
 
 // PodDetail is a presentation layer view of Kubernetes Pod resource.

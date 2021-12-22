@@ -18,7 +18,7 @@ import (
 	"net/http"
 
 	restful "github.com/emicklei/go-restful/v3"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
 )
 
 // IntegrationHandler manages all endpoints related to integrated applications, such as state.

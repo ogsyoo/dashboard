@@ -110,7 +110,7 @@ Kubernetes Dashboard の和訳を実施するにあたって、下記の配慮�
   その際、翻訳済みである印として、`<target>` タグ内に `state="new"` の属性があれば、この属性を削除します。**
 * `npm run start:prod` を実行して Kubernetes Dashboard をビルド、実行して、和訳／修正した結果をブラウザから確認します。
 * Pull Request を `kubernetes/dashboard` リポジトリに提出します。
-* 新たに翻訳すべき原文の追加や修正が発生しているかは、[`kubernetes/dashboard` リポジトリの`language/ja` ラベルが付いた Pull Request](https://github.com/ogsyoo/dashboard/pulls?utf8=%E2%9C%93&q=is%3Apr+label%3Alanguage%2Fja) を監視することで行います。
+* 新たに翻訳すべき原文の追加や修正が発生しているかは、[`kubernetes/dashboard` リポジトリの`language/ja` ラベルが付いた Pull Request](https://github.com/ogsyoo/dashboard/v2/pulls?utf8=%E2%9C%93&q=is%3Apr+label%3Alanguage%2Fja) を監視することで行います。
 
 ### 原文修正
 

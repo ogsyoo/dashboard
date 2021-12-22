@@ -17,7 +17,7 @@ package api
 import (
 	"strings"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
 )
 
 // ToAuthenticationModes transforms array of authentication mode strings to valid AuthenticationModes type.

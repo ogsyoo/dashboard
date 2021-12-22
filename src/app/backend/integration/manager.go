@@ -17,9 +17,9 @@ package integration
 import (
 	"fmt"
 
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/metric"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

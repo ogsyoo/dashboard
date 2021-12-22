@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/event"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/event"
 	apps "k8s.io/api/apps/v1"
 	batch "k8s.io/api/batch/v1"
 	v1 "k8s.io/api/core/v1"

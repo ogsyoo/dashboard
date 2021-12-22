@@ -27,12 +27,12 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/client-go/rest"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/common"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/customresourcedefinition/types"
-	crdv1 "github.com/ogsyoo/dashboard/src/app/backend/resource/customresourcedefinition/v1"
-	crdv1beta1 "github.com/ogsyoo/dashboard/src/app/backend/resource/customresourcedefinition/v1beta1"
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/common"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/customresourcedefinition/types"
+	crdv1 "github.com/ogsyoo/dashboard/v2/src/app/backend/resource/customresourcedefinition/v1"
+	crdv1beta1 "github.com/ogsyoo/dashboard/v2/src/app/backend/resource/customresourcedefinition/v1beta1"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 )
 
 var (

@@ -18,8 +18,8 @@ import (
 	"log"
 	"sort"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
-	metricapi "github.com/ogsyoo/dashboard/src/app/backend/integration/metric/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
+	metricapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/metric/api"
 )
 
 // GenericDataCell describes the interface of the data cell that contains all the necessary methods needed to perform

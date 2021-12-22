@@ -28,7 +28,7 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/rest/fake"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 type clientFunc func(req *http.Request) (*http.Response, error)

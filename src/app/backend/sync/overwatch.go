@@ -21,7 +21,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	syncApi "github.com/ogsyoo/dashboard/src/app/backend/sync/api"
+	syncApi "github.com/ogsyoo/dashboard/v2/src/app/backend/sync/api"
 )
 
 // Overwatch is watching over every registered synchronizer. In case of error it will be logged and if RestartPolicy

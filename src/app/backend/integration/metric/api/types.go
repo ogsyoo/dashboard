@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
-	integrationapi "github.com/ogsyoo/dashboard/src/app/backend/integration/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
+	integrationapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 )

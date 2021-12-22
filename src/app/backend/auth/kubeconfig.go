@@ -15,8 +15,8 @@
 package auth
 
 import (
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 
 	yaml "gopkg.in/yaml.v2"
 	"k8s.io/client-go/tools/clientcmd/api"

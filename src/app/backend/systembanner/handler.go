@@ -18,7 +18,7 @@ import (
 	"net/http"
 
 	restful "github.com/emicklei/go-restful/v3"
-	"github.com/ogsyoo/dashboard/src/app/backend/systembanner/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/systembanner/api"
 )
 
 // SystemBannerHandler manages all endpoints related to system banner management.

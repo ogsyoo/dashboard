@@ -17,7 +17,7 @@ package errors_test
 import (
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 func TestLocalizeError(t *testing.T) {

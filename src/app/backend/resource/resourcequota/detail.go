@@ -15,7 +15,7 @@
 package resourcequota
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/api"
 	v1 "k8s.io/api/core/v1"
 )
 

@@ -17,7 +17,7 @@ package sidecar
 import (
 	"context"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
 	"k8s.io/client-go/rest"
 )
 

@@ -28,20 +28,20 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/pflag"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/args"
-	"github.com/ogsyoo/dashboard/src/app/backend/auth"
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/auth/jwe"
-	"github.com/ogsyoo/dashboard/src/app/backend/cert"
-	"github.com/ogsyoo/dashboard/src/app/backend/cert/ecdsa"
-	"github.com/ogsyoo/dashboard/src/app/backend/client"
-	clientapi "github.com/ogsyoo/dashboard/src/app/backend/client/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/handler"
-	"github.com/ogsyoo/dashboard/src/app/backend/integration"
-	integrationapi "github.com/ogsyoo/dashboard/src/app/backend/integration/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/settings"
-	"github.com/ogsyoo/dashboard/src/app/backend/sync"
-	"github.com/ogsyoo/dashboard/src/app/backend/systembanner"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/args"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/auth"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/auth/jwe"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/cert"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/cert/ecdsa"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/client"
+	clientapi "github.com/ogsyoo/dashboard/v2/src/app/backend/client/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/handler"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration"
+	integrationapi "github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/settings"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/sync"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/systembanner"
 )
 
 var (
@@ -256,7 +256,7 @@ func handleFatalInitError(err error) {
 		"invalid apiserver certificates or service account's configuration) or the "+
 		"--apiserver-host param points to a server that does not exist. Reason: %s\n"+
 		"Refer to our FAQ and wiki pages for more information: "+
-		"https://github.com/ogsyoo/dashboard/wiki/FAQ", err)
+		"https://github.com/ogsyoo/dashboard/v2/wiki/FAQ", err)
 }
 
 /**

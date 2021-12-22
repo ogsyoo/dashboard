@@ -15,7 +15,7 @@
 package cronjob_test
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 var (

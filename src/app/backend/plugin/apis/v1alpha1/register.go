@@ -19,7 +19,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/plugin/apis"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/plugin/apis"
 )
 
 // SchemeGroupVersion is group version used to register these objects

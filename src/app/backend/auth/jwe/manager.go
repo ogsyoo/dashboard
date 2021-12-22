@@ -21,8 +21,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/json"
 	"k8s.io/client-go/tools/clientcmd/api"
 
-	authApi "github.com/ogsyoo/dashboard/src/app/backend/auth/api"
-	"github.com/ogsyoo/dashboard/src/app/backend/errors"
+	authApi "github.com/ogsyoo/dashboard/v2/src/app/backend/auth/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/errors"
 )
 
 // Implements TokenManager interface

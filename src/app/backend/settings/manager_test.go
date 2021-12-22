@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ogsyoo/dashboard/src/app/backend/settings/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/settings/api"
 	"k8s.io/client-go/kubernetes/fake"
 )
 

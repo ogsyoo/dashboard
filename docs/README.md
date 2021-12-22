@@ -28,4 +28,4 @@
 * [Plugins](plugins/README.md)
 
 ----
-_Copyright 2019 [The Kubernetes Dashboard Authors](https://github.com/ogsyoo/dashboard/graphs/contributors)_
+_Copyright 2019 [The Kubernetes Dashboard Authors](https://github.com/ogsyoo/dashboard/v2/graphs/contributors)_

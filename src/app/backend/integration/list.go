@@ -15,7 +15,7 @@
 package integration
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/integration/api"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/integration/api"
 )
 
 // IntegrationsGetter is responsible for listing all supported integrations.

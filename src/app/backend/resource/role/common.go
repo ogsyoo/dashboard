@@ -15,7 +15,7 @@
 package role
 
 import (
-	"github.com/ogsyoo/dashboard/src/app/backend/resource/dataselect"
+	"github.com/ogsyoo/dashboard/v2/src/app/backend/resource/dataselect"
 )
 
 // The code below allows to perform complex data section on []Role
