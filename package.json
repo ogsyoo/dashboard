@@ -1,0 +1,283 @@
+{
+  "name": "kubernetes-dashboard",
+  "version": "2.4.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ogsyoo/dashboard.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "concurrently \"SIDECAR_HOST=$npm_config_sidecar_host make watch-backend\" \"npm run start:frontend --bind_address=$npm_config_bind_address --port=$npm_config_port\"",
+    "start:https": "concurrently \"AUTO_GENERATE_CERTS=true SIDECAR_HOST=$npm_config_sidecar_host make watch-backend\" \"npm run start:frontend:https --bind_address=$npm_config_bind_address --port=$npm_config_port\"",
+    "start:prod": "SIDECAR_HOST=$npm_config_sidecar_host BIND_ADDRESS=$npm_config_bind_address PORT=$npm_config_port make prod",
+    "start:e2e": "concurrently \"make serve-backend\" \"npm run start:frontend\"",
+    "start:frontend": "make ensure-version && ng serve --proxy-config aio/proxy.conf.json --host $npm_config_bind_address --port $npm_config_port",
+    "start:frontend:https": "make ensure-version && ng serve --proxy-config aio/https-proxy.conf.json --ssl --host $npm_config_bind_address --port $npm_config_port",
+    "check": "make check",
+    "fix": "make fix",
+    "test": "make test",
+    "e2e": "concurrently -kill-others --success first \"npm run start:e2e\" \"wait-on http://localhost:8080 && npx cypress run\"",
+    "e2e:headed": "concurrently -kill-others --success first \"npm run start:e2e\" \"wait-on http://localhost:8080 && npx cypress run --headed\"",
+    "postinstall": "make ensure-version && go mod vendor && ngcc",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "gts fix"
+    ],
+    "src/**/*.scss": [
+      "stylelint --fix"
+    ],
+    "src/**/*.go": [
+      "make fix-go"
+    ],
+    "src/**/*.html": [
+      "./aio/scripts/pre-commit-i18n.sh"
+    ]
+  },
+  "xliffmergeOptions": {
+    "srcDir": "i18n",
+    "genDir": "i18n",
+    "defaultLanguage": "en",
+    "languages": [
+      "de",
+      "fr",
+      "ja",
+      "ko",
+      "zh-Hans",
+      "zh-Hant",
+      "zh-Hant-HK"
+    ],
+    "beautifyOutput": true
+  },
+  "dependencies": {
+    "@angular/animations": "13.1.0",
+    "@angular/cdk": "13.1.0",
+    "@angular/common": "13.1.0",
+    "@angular/compiler": "13.1.0",
+    "@angular/core": "13.1.0",
+    "@angular/flex-layout": "13.0.0-beta.36",
+    "@angular/forms": "13.1.0",
+    "@angular/localize": "13.1.0",
+    "@angular/material": "13.1.0",
+    "@angular/platform-browser": "13.1.0",
+    "@angular/platform-browser-dynamic": "13.1.0",
+    "@angular/router": "13.1.0",
+    "@swimlane/ngx-charts": "19.1.0",
+    "ace-builds": "1.4.13",
+    "ansi-to-html": "0.7.2",
+    "c3": "0.7.20",
+    "core-js": "3.19.1",
+    "d3": "6.7.0",
+    "file-saver": "2.0.5",
+    "js-yaml": "4.1.0",
+    "jwt-decode": "3.1.2",
+    "material-design-icons": "3.0.1",
+    "ng-in-viewport": "6.1.5",
+    "ngx-cookie-service": "13.1.2",
+    "ngx-pipes": "2.7.6",
+    "normalize.css": "8.0.1",
+    "roboto-fontface": "0.10.0",
+    "rxjs": "6.6.7",
+    "rxjs-compat": "6.6.7",
+    "sockjs-client": "1.5.2",
+    "strip-ansi": "6.0.1",
+    "systemjs": "6.11.0",
+    "truncate-url": "1.0.0",
+    "tslib": "2.3.1",
+    "web-animations-js": "2.3.2",
+    "xterm": "4.15.0",
+    "xterm-addon-fit": "0.5.0",
+    "zone.js": "0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "13.1.1",
+    "@angular/cli": "13.1.1",
+    "@angular/compiler-cli": "13.1.0",
+    "@angular/language-service": "13.1.0",
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "@babel/register": "7.16.0",
+    "@cypress/webpack-preprocessor": "5.9.1",
+    "@types/c3": "0.7.6",
+    "@types/d3": "7.1.0",
+    "@types/d3-scale": "4.0.2",
+    "@types/file-saver": "2.0.4",
+    "@types/jasmine": "3.10.2",
+    "@types/jasminewd2": "2.0.10",
+    "@types/jest": "27.0.3",
+    "@types/js-yaml": "4.0.5",
+    "@types/lodash": "4.14.177",
+    "@types/node": "16.11.10",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "codelyzer": "6.0.2",
+    "concurrently": "6.4.0",
+    "cypress": "8.7.0",
+    "cypress-fail-fast": "3.3.0",
+    "del": "6.0.0",
+    "eslint": "8.3.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-rxjs": "4.0.3",
+    "git-describe": "4.1.0",
+    "gts": "3.1.0",
+    "husky": "7.0.4",
+    "jasmine-core": "3.10.1",
+    "jasmine-spec-reporter": "7.0.0",
+    "jest": "27.3.1",
+    "jest-preset-angular": "11.0.1",
+    "js-beautify": "1.14.0",
+    "license-check-and-add": "4.0.3",
+    "lint-staged": "12.1.2",
+    "lodash": "4.17.21",
+    "minimatch": "3.0.4",
+    "minimist": "1.2.5",
+    "ngx-i18nsupport": "0.17.1",
+    "node-gyp": "8.3.0",
+    "q": "1.5.1",
+    "raw-loader": "4.0.2",
+    "run-node": "2.0.0",
+    "sass": "1.43.4",
+    "sass-loader": "12.2.0",
+    "semver": "7.3.5",
+    "source-map-explorer": "2.5.2",
+    "stylelint": "14.1.0",
+    "stylelint-config-standard-scss": "3.0.0",
+    "stylelint-no-unsupported-browser-features": "5.0.2",
+    "stylelint-order": "5.0.0",
+    "tar": "6.1.11",
+    "through2": "4.0.2",
+    "ts-jest": "27.0.7",
+    "ts-loader": "9.2.6",
+    "ts-node": "10.4.0",
+    "typescript": "4.4.4",
+    "wait-on": "6.0.0",
+    "webpack-dev-server": "4.4.0"
+  },
+  "engines": {
+    "node": ">=16.13.0 <17",
+    "npm": ">=8.1.0 <9"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "project": "./tsconfig.json",
+      "sourceType": "module"
+    },
+    "extends": "./node_modules/gts/",
+    "plugins": [
+      "rxjs"
+    ],
+    "rules": {
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/no-namespace": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-this-alias": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "node/no-unpublished-import": "off",
+      "no-undef": "off",
+      "no-inner-declarations": "off",
+      "no-redeclare": "off",
+      "eol-last": "error",
+      "no-console": "off",
+      "no-prototype-builtins": "off",
+      "no-extra-boolean-cast": "error",
+      "no-else-return": "error",
+      "node/no-extraneous-require": "error",
+      "node/no-unpublished-require": "error",
+      "prefer-rest-params": "error",
+      "rxjs/ban-operators": [
+        "error",
+        {
+          "first": "use take(1) instead"
+        }
+      ],
+      "rxjs/no-ignored-observable": "error",
+      "rxjs/no-unbound-methods": "error",
+      "rxjs/no-unsafe-takeuntil": "error",
+      "rxjs/no-nested-subscribe": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/**/*.spec.ts"
+        ],
+        "env": {
+          "browser": true,
+          "jest": true
+        }
+      }
+    ],
+    "ignorePatterns": [
+      "**/*.js"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "aio/*",
+    "src/app/frontend/common/services/global/history.ts"
+  ],
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard-scss"
+    ],
+    "plugins": [
+      "stylelint-no-unsupported-browser-features",
+      "stylelint-order"
+    ],
+    "rules": {
+      "alpha-value-notation": "number",
+      "no-descending-specificity": null,
+      "order/order": [
+        "dollar-variables",
+        {
+          "type": "at-rule",
+          "name": "extend"
+        },
+        {
+          "type": "at-rule",
+          "name": "include"
+        },
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "include",
+          "hasBlock": true
+        },
+        "at-rules",
+        "rules"
+      ],
+      "order/properties-alphabetical-order": true,
+      "plugin/no-unsupported-browser-features": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "scss/comment-no-empty": null,
+      "selector-pseudo-element-no-unknown": null,
+      "string-quotes": "single"
+    }
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "not samsung 4",
+    "not android 4.4.3-4.4.4",
+    "not last 2 IE versions",
+    "not last 2 ie_mob versions",
+    "not last 2 op_mini versions",
+    "not last 2 op_mob versions",
+    "not last 2 baidu versions",
+    "not last 2 kaios versions",
+    "not last 2 and_uc versions",
+    "not last 2 and_qq versions",
+    "not last 2 edge versions"
+  ]
+}
